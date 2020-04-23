@@ -1,0 +1,455 @@
+@import 'reset.css';
+/* Flexbox
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+/* These are the conditional mixins for the different syntax for IE10 Flexbox*/
+/****INDEX****/
+body {
+  font-size: 13px;
+  color: #333;
+}
+body #recent_object {
+  margin-top: 5em;
+}
+body #recent_object .recent h1 {
+  font-size: 2.15em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+body #recent_object .recent div {
+  margin-bottom: 3em;
+}
+body #recent_object .recent img {
+  width: 330px;
+  height: 200px;
+}
+body #recent_object .recent figure {
+  padding-left: 1em;
+}
+body #recent_object .recent figure h2 {
+  font-size: 1.38em;
+  font-weight: 800;
+  padding: 23px 0 12px 0;
+  color: #4656ff;
+}
+body #recent_object .recent figure i {
+  padding-right: 0.7em;
+}
+body #recent_object .recent figure p:nth-child(2) {
+  padding-bottom: 15px;
+  color: #4656ff;
+  line-height: 1.2;
+}
+body #recent_object .recent figure p:nth-child(3) {
+  padding-bottom: 20px;
+}
+body #recent_object .recent figure p:nth-child(3) span {
+  font-weight: 700;
+}
+body #recent_object .recent figure ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+body #recent_object .recent figure ul li {
+  padding: 0 10px 10px 0;
+}
+body #recent_object .recent figure ul li span {
+  font-weight: 700;
+}
+body #recent_object .recent figure p:nth-child(5) {
+  font-size: 15px;
+}
+body #recent_object .recent figure p:nth-child(5) span {
+  font-weight: 700;
+}
+body #recent_object .recent .row {
+  padding-top: 5em;
+}
+body #cities {
+  margin: 5em 0;
+}
+body #cities .cities {
+  border: 1px solid #cecaca;
+}
+body #cities .cities h3 {
+  text-align: center;
+  font-size: 2.15em;
+  font-weight: 700;
+  padding-top: 1em;
+}
+body #cities .row {
+  margin-top: 5em;
+}
+body #cities .row figure {
+  padding: 10px 0 30px 0;
+}
+body #cities .row figure img {
+  width: 160px;
+  height: 130px;
+}
+body #cities .row figure p {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.23em;
+  padding-top: 1em;
+  color: #4656ff;
+  line-height: 1.2;
+}
+/****OBJECT****/
+#object-single {
+  margin-top: 5em;
+}
+#object-single .object-name {
+  padding-left: 2.5em;
+}
+#object-single .object-name h1 {
+  font-size: 1.85em;
+  font-weight: 700;
+  color: #4656ff;
+}
+#object-single .object-name ul {
+  display: flex;
+  padding-top: 1.5em;
+}
+#object-single .object-name ul li {
+  font-size: 1.1em;
+  padding-right: 20em;
+  color: #4656ff;
+}
+#object-single .object-name ul li:nth-child(2) {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+#object-single .object-name p {
+  padding-top: 1.5em;
+  color: #4656ff;
+}
+#object-single .object-name p i {
+  padding-right: 0.7em;
+}
+#object-single .object-description {
+  margin-top: 2em;
+}
+#object-single .object-description .object-description-bottom {
+  padding-left: 2.5em;
+}
+#object-single .object-description .object-description-bottom img {
+  width: 50%;
+  height: auto;
+}
+#object-single .object-description .object-description-bottom ul {
+  padding-top: 2em;
+  display: flex;
+}
+#object-single .object-description .object-description-bottom ul li {
+  font-size: 1.38em;
+  padding-right: 2em;
+}
+#object-single .object-description .object-description-bottom ul li span {
+  font-weight: 700;
+}
+#object-single .object-description .object-description-bottom h2 {
+  font-size: 1.38em;
+  font-weight: 700;
+  padding: 2em 0;
+}
+#object-single .object-description .object-description-bottom p {
+  font-size: 1.07em;
+  line-height: 1.5;
+  padding-right: 30em;
+  text-align: justify;
+}
+/****SINGLE CITY****/
+.single-city h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #4656ff;
+  padding-top: 2em;
+  text-align: center;
+}
+.single-city .main_img {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.single-city .main_img img {
+  padding-top: 3em;
+  margin: 0 auto;
+}
+.single-city .city-desc {
+  font-size: 1.15em;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 2em;
+}
+.single-city h2 {
+  font-size: 1.85em;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 0 2em 0;
+}
+.single-city div {
+  margin-bottom: 3em;
+}
+.single-city div a img {
+  width: 330px;
+  height: 200px;
+}
+.single-city div a figure {
+  padding-left: 1em;
+}
+.single-city div a figure h3 {
+  font-size: 1.38em;
+  font-weight: 800;
+  padding: 23px 0 12px 0;
+  color: #4656ff;
+}
+.single-city div a figure i {
+  padding-right: 0.7em;
+}
+.single-city div a figure p:nth-child(2) {
+  color: #4656ff;
+  line-height: 1.2;
+  padding: 0 0 15px 0;
+}
+.single-city div a figure p:nth-child(3) {
+  padding: 0 0 20px 0;
+}
+.single-city div a figure p:nth-child(3) span {
+  font-weight: 700;
+}
+.single-city div a figure ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.single-city div a figure ul li {
+  padding: 0 10px 10px 0;
+}
+.single-city div a figure ul li span {
+  font-weight: 700;
+}
+.single-city div a figure p:nth-child(5) {
+  font-size: 15px;
+  padding: 0;
+}
+.single-city div a figure p:nth-child(5) span {
+  font-weight: 700;
+}
+/****FORMA****/
+#forma {
+  margin-bottom: 5em;
+}
+#forma h3 {
+  text-align: center;
+  font-size: 2.15em;
+  line-height: 1.2;
+  font-weight: 700;
+  padding-bottom: 2em;
+}
+#forma form input,
+#forma form textarea {
+  width: 100%;
+  margin-bottom: 2em;
+  font-size: 1.23em;
+  color: #333;
+}
+#forma form input[type=text],
+#forma form textarea {
+  border: 1px solid #a0a0a0;
+}
+#forma form input {
+  height: 47px;
+}
+#forma form textarea {
+  height: 100px;
+}
+#forma form .form-groupp {
+  display: flex;
+}
+#forma form .form-groupp .checkbox {
+  padding-top: 1em;
+}
+#forma form .form-groupp .checkbox label {
+  position: relative;
+  bottom: 0.6em;
+  font-size: 1.15em;
+}
+#forma form .form-groupp .checkbox input {
+  width: 15%;
+  height: 24px;
+  display: inline-block;
+  margin-left: 2.95em;
+}
+#forma form .form-groupp select {
+  width: 99%;
+  height: 43px;
+  color: #6d6d6d;
+  border: 1px solid #a0a0a0;
+  font-size: 15px;
+}
+#forma form .form-control-file {
+  padding-top: 0.5em;
+}
+#forma form .form-control {
+  box-shadow: none;
+}
+#forma form .btn-primary {
+  background: #7883ff;
+  padding: 18px;
+  color: #fff;
+  font-weight: 600;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#forma form .filer {
+  margin-top: 2em;
+  font-size: 18px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+#forma form .response {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2em;
+  font-weight: 700;
+  color: #7883ff;
+  line-height: 1.2;
+}
+/* Responsive
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+@media (max-width: 1024px) {
+  /****INDEX****/
+  body #recent_object .recent img {
+    width: 290px;
+    height: auto;
+  }
+  body #cities .row figure img {
+    width: 130px;
+    height: auto;
+  }
+  /****SINGLE CITY****/
+  .single-city .row:nth-child(3) img {
+    width: 290px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 870px) {
+  /****INDEX****/
+  body #cities .row {
+    margin-top: 3em;
+  }
+  body #cities .row figure img {
+    width: 100%;
+    height: 100%;
+  }
+  body #recent_object .recent .row {
+    padding-top: 3em;
+  }
+  body #recent_object .recent .row div {
+    margin-bottom: 3em;
+  }
+  body #recent_object .recent .row div img {
+    width: 100%;
+    height: auto;
+  }
+  /****OBJECT****/
+  #object-single .object-name ul li {
+    padding-right: 2em;
+  }
+  #object-single .object-description img {
+    max-width: 100%;
+    height: auto;
+  }
+  #object-single .object-description .object-description-bottom p {
+    padding: 0;
+    text-align: inherit;
+    padding: 0 0 5em 0;
+  }
+  /****SINGLE CITY****/
+  .single-city .row:nth-child(3) div {
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .single-city .row .main_img img {
+    max-width: 100%;
+  }
+  /****FORMA****/
+  #forma form .form-groupp {
+    display: block;
+  }
+  #forma form .form-groupp .checkbox input {
+    margin-left: 5.95em;
+  }
+  #forma form .form-groupp .checkbox label {
+    left: 6em;
+  }
+  #forma form .form-groupp select {
+    margin-bottom: 1em;
+  }
+  #forma form .form-control-file {
+    padding-left: 2em;
+  }
+  #forma .filer {
+    width: 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  /****INDEX****/
+  body #cities .row {
+    margin-top: 3em;
+  }
+  body #cities .row figure img {
+    width: 100%;
+    height: 100%;
+  }
+  body #recent_object .recent .row {
+    padding-top: 3em;
+  }
+  body #recent_object .recent .row div {
+    margin-bottom: 3em;
+  }
+  body #recent_object .recent .row div img {
+    width: 100%;
+    height: auto;
+  }
+  /****FORMA****/
+  #forma form .form-groupp {
+    display: block;
+  }
+  #forma form .form-groupp .checkbox input {
+    margin-left: 5.95em;
+  }
+  #forma form .form-groupp .checkbox label {
+    left: 6em;
+  }
+  #forma form .form-control-file {
+    padding-left: 2em;
+  }
+}
+@media (max-width: 570px) {
+  /****INDEX****/
+  .recent .row div {
+    margin-bottom: 3em;
+  }
+  .cities .row figure img {
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
